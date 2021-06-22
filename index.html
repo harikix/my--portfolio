@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="header">
+
+      <div class="logo">
+        <h1>HarukiSasaki</h1>
+      </div>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">top</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar">
+        <div class="hamburger-menu" id="hamburger">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+      </div>
+
+    </header>
+
+    <div class="overlay">
+      <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link" href="#home">home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
+      </ul>
+    </div>
+
+    <section class="home-section section active" id="home">
+      <div class="star comet"></div>
+      <div class="wrapper">
+        <p class="c-text js-span-text">Welcome<br>To<br>My<br>portfolio<br>Site</p>
+      </div>
+    </section>
+    
+    <section class="about-section section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>about</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="about-img inner-shadow">
+            <div class="img-box">
+              <img src="/img/github.png" alt="自己紹介画像">
+            </div>
+            <div class="social-links">
+              <a href="https://twitter.com/Haruharu_script" class="outer-shadow hover-in-shadow">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/haruki_programerrr/" class="outer-shadow hover-in-shadow">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://github.com/harikix" class="outer-shadow hover-in-shadow">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="mailto:ssk960809@gmail.com" class="outer-shadow hover-in-shadow">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+          <div class="about-info">
+            <p>1996年生まれ　福岡出身の２４歳です。</p>
+            <p>とんこつラーメンよりも塩ラーメン派です。最近ポケモンカードを集め始めました。</p>
+            <p>web系エンジニアを目指しています。フロントエンド領域が得意です。</p>
+            <p>cssはアニメーション、JavaScriptはES6の基本文法に加えて、canvasができます。Vue.jsもちょっとだけできます。</p>
+            <p>これからはReactやTypeScriptもキャッチアップしていきたいと思っています。今はまだまだ未熟ですが、つよつよエンジニアになれるよう努力していきます。</p>
+          </div>
+        </div>
+        <div class="skill">
+          <h1>skills</h1>
+        </div>
+        <div class="skills">
+          <div class="row">
+            <div class="skill-item">
+              <p>html</p>
+              <div class="progress">
+                <div class="progress-bar" style="width: calc(80% - 14px)">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p>css</p>
+              <div class="progress">
+                <div class="progress-bar" style="width: calc(70% - 14px)">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p>JavaScript</p>
+              <div class="progress">
+                <div class="progress-bar" style="width: calc(70% - 14px)">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p>node.js</p>
+              <div class="progress">
+                <div class="progress-bar" style="width: calc(50% - 14px)">
+                  <span>50%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section section" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>contact</h2>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form>
+            <div class="input-group outer-shadow hover-in-shadow">
+              <input type="text" name="name" placeholder="Name" class="form-style">
+            </div>
+            <div class="input-group">
+              <input type="email" name="email" placeholder="Email" class="form-style">
+            </div>
+            <div class="input-group">
+              <input type="text" name="subject" placeholder="Subject" class="form-style">
+            </div>
+            <div class="input-group">
+              <textarea name="inquiry" placeholder="Message" class="form-style"></textarea>
+            </div>
+          </form>
+          <div class="submit-btn">
+            <button type="submit" class="submit-btn">Send Message</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy;2021 HarukiSasaki</p>
+    </footer>
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/star.js"></script>
+  </body>
+</html>
